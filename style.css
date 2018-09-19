@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Monoton|Roboto");
+:root {
+  --blue: #068587;
+  --teal: #112F41;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  background-image: radial-gradient(ellipse at bottom right, var(--teal), var(--blue));
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  color: #FFF;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-family: 'Monoton', cursive;
+  font-size: 4em;
+}
+h1::-moz-selection {
+  color: var(--blue);
+  background-color: #FFF;
+}
+h1::selection {
+  color: var(--blue);
+  background-color: #FFF;
+}
+
+nav {
+  width: 100%;
+  align-self: flex-end;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: flex-end;
+  flex-wrap: wrap;
+}
+
+li {
+  padding: 0.4em 0.6em;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+  transition: all 0.4s;
+  padding: 0.4em 0.6em;
+  display: flex;
+  flex-direction: column;
+}
+
+a:hover {
+  border-bottom: none;
+  border-radius: 0.2em;
+  background: #FFF;
+  color: var(--blue);
+}
