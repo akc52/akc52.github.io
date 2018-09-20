@@ -6,6 +6,7 @@
 
 html, body {
   font-family: 'Roboto', sans-serif;
+  font-size: 12px;
   background-image: radial-gradient(ellipse at bottom right, var(--teal), var(--blue));
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -26,7 +27,7 @@ body {
 
 h1 {
   font-family: 'Monoton', cursive;
-  font-size: 4em;
+  font-size: 6em;
 }
 h1::-moz-selection {
   color: var(--blue);
@@ -57,15 +58,18 @@ li {
 }
 
 a {
+  font-size: 2em;
   color: #FFF;
   text-decoration: none;
-  transition: all 0.4s;
   padding: 0.4em 0.6em;
   display: flex;
   flex-direction: column;
+  transform-style: preserve-3d;
+  transition: all 0.4s ease-in;
 }
 
 a:hover {
+  transform: rotateY(360deg);
   border-bottom: none;
   border-radius: 0.2em;
   background: #FFF;
