@@ -4,7 +4,7 @@
   --teal: #112F41;
 }
 
-html, body {
+body {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   background-image: radial-gradient(ellipse at bottom right, var(--teal), var(--blue));
